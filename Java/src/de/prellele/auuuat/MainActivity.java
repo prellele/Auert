@@ -1,4 +1,4 @@
-package de.prellele.auert;
+package de.prellele.auuuat;
 
 import android.app.Activity;
 import android.content.Context;
