@@ -1,7 +1,6 @@
 package de.prellele.auuuat;
 
 import android.app.Activity;
-import android.content.Context;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
@@ -12,7 +11,6 @@ import android.widget.ImageView;
 public class MainActivity extends Activity {
 	public MediaPlayer mp;
 	private ImageView img;
-	private Context context;
 
 	/** Called when the activity is first created. */
 	@Override
@@ -23,11 +21,10 @@ public class MainActivity extends Activity {
 		img = (ImageView) findViewById(R.id.playAuert);
 		img.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				mp = MediaPlayer.create(MainActivity.this, R.raw.fart);
+				mp = MediaPlayer.create(MainActivity.this, R.raw.auaat);
 				mp.start();
 				mp.setOnCompletionListener(new OnCompletionListener() {
 
-					@Override
 					public void onCompletion(MediaPlayer mp) {
 						// TODO Auto-generated method stub
 						mp.release();
