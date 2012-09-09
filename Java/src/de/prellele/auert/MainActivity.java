@@ -1,5 +1,6 @@
-package de.prellele.auuuat;
+package de.prellele.auert;
 
+import de.prellele.auert.R;
 import android.app.Activity;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
@@ -21,7 +22,7 @@ public class MainActivity extends Activity {
 		img = (ImageView) findViewById(R.id.playAuert);
 		img.setOnClickListener(new OnClickListener() {
 			public void onClick(View v) {
-				mp = MediaPlayer.create(MainActivity.this, R.raw.auaat);
+				mp = MediaPlayer.create(MainActivity.this, R.raw.auert);
 				mp.start();
 				mp.setOnCompletionListener(new OnCompletionListener() {
 
